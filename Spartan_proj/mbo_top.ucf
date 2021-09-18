@@ -1,33 +1,36 @@
 
 
-NET "fake_out[23]" LOC = D1;
-NET "fake_out[22]" LOC = D2;
-NET "fake_out[21]" LOC = C2;
-NET "fake_out[20]" LOC = C3;
+NET "fake_out[23]" LOC = C6;
+NET "fake_out[22]" LOC = K14;
+NET "fake_out[21]" LOC = C5;
+NET "fake_out[20]" LOC = B5;
 NET "fake_out[19]" LOC = C4;
-NET "fake_out[18]" LOC = C5;
-NET "fake_out[17]" LOC = B1;
-NET "fake_out[16]" LOC = B2;
-NET "fake_out[15]" LOC = J3;
-NET "fake_out[14]" LOC = L1;
-NET "fake_out[13]" LOC = L2;
-NET "fake_out[12]" LOC = L3;
-NET "fake_out[11]" LOC = M1;
-NET "fake_out[10]" LOC = M2;
-NET "fake_out[9]" LOC = N1;
-NET "fake_out[8]" LOC = N2;
-NET "fake_out[7]" LOC = C14;
-NET "fake_out[6]" LOC = C13;
-NET "fake_out[4]" LOC = B4;
-NET "fake_out[3]" LOC = B5;
-NET "fake_out[1]" LOC = C12;
-NET "fake_out[0]" LOC = C11;
-NET "clk" LOC = M13;
-NET "in_bo5_1" LOC = N8;
-NET "in_bo5_2" LOC = N9;
-NET "opros" LOC = N10;
-NET "out" LOC = N11;
-NET "clk" CLOCK_DEDICATED_ROUTE = FALSE;
-
+NET "fake_out[18]" LOC = B4;
+NET "fake_out[17]" LOC = P4;
+NET "fake_out[16]" LOC = N1;
+NET "fake_out[15]" LOC = P1;
+NET "fake_out[14]" LOC = N4;
+NET "fake_out[13]" LOC = M4;
+NET "fake_out[12]" LOC = M5;
+NET "fake_out[11]" LOC = P7;
+NET "fake_out[10]" LOC = P6;
+NET "fake_out[9]" LOC = M9;
+NET "fake_out[8]" LOC = N9;
+NET "fake_out[7]" LOC = N10;
+NET "fake_out[6]" LOC = M12;
+NET "fake_out[4]" LOC = L14;
 NET "fake_out[5]" LOC = B3;
 NET "fake_out[2]" LOC = B6;
+NET "fake_out[3]" LOC = N14;
+NET "fake_out[1]" LOC = N13;
+NET "fake_out[0]" LOC = M13;
+
+NET "clk" LOC = A10;
+
+NET "in_bo5_1" LOC = J12;
+NET "in_bo5_2" LOC = L13;
+NET "opros" LOC = L14;
+NET "out" LOC = B6;
+NET "clk" CLOCK_DEDICATED_ROUTE = FALSE;
+
+

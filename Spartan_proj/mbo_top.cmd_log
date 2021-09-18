@@ -1,5 +1,0 @@
-xst -intstyle ise -ifn "C:/Xilinx/projects/MBO-5/Spartan_proj/mbo_top.xst" -ofn "C:/Xilinx/projects/MBO-5/Spartan_proj/mbo_top.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-cp132-5 mbo_top.ngc mbo_top.ngd  
-map -intstyle ise -p xc3s500e-cp132-5 -cm area -ir off -pr off -c 100 -o mbo_top_map.ncd mbo_top.ngd mbo_top.pcf 
-par -w -intstyle ise -ol high -t 1 mbo_top_map.ncd mbo_top.ncd mbo_top.pcf 
-trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml mbo_top.twx mbo_top.ncd -o mbo_top.twr mbo_top.pcf 

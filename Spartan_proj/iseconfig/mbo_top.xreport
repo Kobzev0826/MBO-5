@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-11-03T19:01:46</DateModified>
+  <DateModified>2021-11-03T20:06:58</DateModified>
   <ModuleName>mbo_top</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Xilinx/projects/MBO-5/Spartan_proj/iseconfig/mbo_top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Xilinx/projects/MBO-5/Spartan_proj</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Xilinx/projects/MBO-5/Spartan_proj\</ImplementationReportsDirectory>
   <DateInitialized>2021-11-03T19:01:46</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -73,6 +73,7 @@
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_2"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_3"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_4"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
@@ -140,6 +141,8 @@
     <transform xil_pn:end_ts="1637182181" xil_pn:in_ck="-883018625609556421" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="6952232319478388371" xil_pn:start_ts="1637182177">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="MBO_testpin.pcf"/>
       <outfile xil_pn:name="MBO_testpin_map.map"/>
       <outfile xil_pn:name="MBO_testpin_map.mrp"/>

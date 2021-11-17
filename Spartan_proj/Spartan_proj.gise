@@ -42,6 +42,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="MBO_testpin.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="MBO_testpin.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="MBO_testpin.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="MBO_testpin_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="MBO_testpin_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="MBO_testpin_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="MBO_testpin_map.mrp" xil_pn:subbranch="Map"/>
@@ -64,11 +65,16 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="mbo_testpin.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="mbo_testpin.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="mbo_testpin.drc" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="mbo_top.ngc" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="mbo_top.ngr"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="mbo_top_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_2"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_3"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
@@ -99,7 +105,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1631934016" xil_pn:in_ck="2761634597230724232" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-8753657427696645326" xil_pn:start_ts="1631934010">
+    <transform xil_pn:end_ts="1637181858" xil_pn:in_ck="2761634597230724232" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-8753657427696645326" xil_pn:start_ts="1637181850">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -114,15 +120,15 @@
       <outfile xil_pn:name="MBO_testpin.xst"/>
       <outfile xil_pn:name="MBO_testpin_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="mbo_top.ngc"/>
+      <outfile xil_pn:name="mbo_top.ngr"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1631934016" xil_pn:in_ck="600792369601777520" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-5866093209459792026" xil_pn:start_ts="1631934016">
+    <transform xil_pn:end_ts="1637182172" xil_pn:in_ck="600792369601777520" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-5866093209459792026" xil_pn:start_ts="1637182172">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1631934021" xil_pn:in_ck="6910043086662500112" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-6282956387200796530" xil_pn:start_ts="1631934016">
+    <transform xil_pn:end_ts="1637182177" xil_pn:in_ck="6910043086662500112" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-6282956387200796530" xil_pn:start_ts="1637182172">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="MBO_testpin.bld"/>
@@ -131,9 +137,8 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1631934024" xil_pn:in_ck="-883018625609556421" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="6952232319478388371" xil_pn:start_ts="1631934021">
+    <transform xil_pn:end_ts="1637182181" xil_pn:in_ck="-883018625609556421" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="6952232319478388371" xil_pn:start_ts="1637182177">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="MBO_testpin.pcf"/>
       <outfile xil_pn:name="MBO_testpin_map.map"/>
@@ -145,7 +150,7 @@
       <outfile xil_pn:name="MBO_testpin_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1631934034" xil_pn:in_ck="6349370307127924788" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1631934024">
+    <transform xil_pn:end_ts="1637182193" xil_pn:in_ck="6349370307127924788" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1637182181">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="MBO_testpin.ncd"/>
@@ -159,16 +164,23 @@
       <outfile xil_pn:name="MBO_testpin_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1631934068" xil_pn:in_ck="600792369601769895" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="287829442711806529" xil_pn:start_ts="1631934066">
-      <status xil_pn:value="FailedRun"/>
+    <transform xil_pn:end_ts="1637182203" xil_pn:in_ck="600792369601769895" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="287829442711806529" xil_pn:start_ts="1637182197">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="MBO_testpin.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="mbo_testpin.bgn"/>
+      <outfile xil_pn:name="mbo_testpin.bit"/>
       <outfile xil_pn:name="mbo_testpin.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1631934034" xil_pn:in_ck="-4028446318466329033" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1631934032">
+    <transform xil_pn:end_ts="1637182211" xil_pn:in_ck="4406906237736115153" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1637182208">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1637182193" xil_pn:in_ck="-4028446318466329033" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1637182190">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="MBO_testpin.twr"/>

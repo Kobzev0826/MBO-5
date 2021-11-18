@@ -110,7 +110,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="MBO_testpin.lso"/>
       <outfile xil_pn:name="MBO_testpin.ngc"/>
@@ -132,6 +134,7 @@
     <transform xil_pn:end_ts="1637182177" xil_pn:in_ck="6910043086662500112" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-6282956387200796530" xil_pn:start_ts="1637182172">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="MBO_testpin.bld"/>
       <outfile xil_pn:name="MBO_testpin.ngd"/>
       <outfile xil_pn:name="MBO_testpin_ngdbuild.xrpt"/>
@@ -141,6 +144,7 @@
     <transform xil_pn:end_ts="1637182181" xil_pn:in_ck="-883018625609556421" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="6952232319478388371" xil_pn:start_ts="1637182177">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="MBO_testpin.pcf"/>
@@ -156,6 +160,7 @@
     <transform xil_pn:end_ts="1637182193" xil_pn:in_ck="6349370307127924788" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1637182181">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="MBO_testpin.ncd"/>
       <outfile xil_pn:name="MBO_testpin.pad"/>
       <outfile xil_pn:name="MBO_testpin.par"/>
@@ -170,6 +175,7 @@
     <transform xil_pn:end_ts="1637182203" xil_pn:in_ck="600792369601769895" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="287829442711806529" xil_pn:start_ts="1637182197">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="MBO_testpin.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="mbo_testpin.bgn"/>
@@ -182,14 +188,17 @@
     <transform xil_pn:end_ts="1637236457" xil_pn:in_ck="4406906237736115153" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1637236455">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1637244024" xil_pn:in_ck="4406906237736115153" xil_pn:name="TRAN_genImpactFile" xil_pn:prop_ck="7121392639749839438" xil_pn:start_ts="1637244022">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1637182193" xil_pn:in_ck="-4028446318466329033" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1637182190">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="MBO_testpin.twr"/>
       <outfile xil_pn:name="MBO_testpin.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

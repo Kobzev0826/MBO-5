@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "E:/Xilinx/projects/MBO-5/Spartan_proj/MBO_testpin.xst" -ofn "E:/Xilinx/projects/MBO-5/Spartan_proj/MBO_testpin.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MBO_testpin.ucf -p xc3s500e-cp132-5 MBO_testpin.ngc MBO_testpin.ngd  
+map -intstyle ise -p xc3s500e-cp132-5 -cm area -ir off -pr off -c 100 -o MBO_testpin_map.ncd MBO_testpin.ngd MBO_testpin.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_testpin_map.ncd MBO_testpin.ncd MBO_testpin.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_testpin.twx MBO_testpin.ncd -o MBO_testpin.twr MBO_testpin.pcf -ucf MBO_testpin.ucf 
+bitgen -intstyle ise -f MBO_testpin.ut MBO_testpin.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/projects/MBO-5/Spartan_proj/MBO_testpin.xst" -ofn "C:/Xilinx/projects/MBO-5/Spartan_proj/MBO_testpin.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MBO_testpin.ucf -p xc3s500e-cp132-5 MBO_testpin.ngc MBO_testpin.ngd  
+map -intstyle ise -p xc3s500e-cp132-5 -cm area -ir off -pr off -c 100 -o MBO_testpin_map.ncd MBO_testpin.ngd MBO_testpin.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_testpin_map.ncd MBO_testpin.ncd MBO_testpin.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_testpin.twx MBO_testpin.ncd -o MBO_testpin.twr MBO_testpin.pcf -ucf MBO_testpin.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MBO_testpin.ucf -p xc3s500e-cp132-5 MBO_testpin.ngc MBO_testpin.ngd  
+map -intstyle ise -p xc3s500e-cp132-5 -cm area -ir off -pr off -c 100 -o MBO_testpin_map.ncd MBO_testpin.ngd MBO_testpin.pcf 
+par -w -intstyle ise -ol high -t 1 MBO_testpin_map.ncd MBO_testpin.ncd MBO_testpin.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml MBO_testpin.twx MBO_testpin.ncd -o MBO_testpin.twr MBO_testpin.pcf -ucf MBO_testpin.ucf 
+bitgen -intstyle ise -f MBO_testpin.ut MBO_testpin.ncd 

@@ -1,0 +1,67 @@
+
+
+NET "clk" LOC = A7;
+NET "clk_alt" LOC = B8;
+NET "CS_aux1" LOC = N13;
+NET "CS_aux2" LOC = L13;
+NET "rst" LOC = A3;
+NET "RxD_Z" LOC = P4;
+NET "RxD_Y" LOC = P7;
+NET "TxD_Z" LOC = M4;
+NET "TxD_Y" LOC = M5;
+NET "test" LOC = P1;
+NET "SCK_aux1" LOC = M13;
+NET "TxD_X" LOC = M9;
+NET "RxD_X" LOC = N10;
+NET "SCK_aux2" LOC = J12;
+NET "DE_X" LOC = N9;
+NET "DE_Y" LOC = P6;
+NET "DE_Z" LOC = N4;
+NET "FL" LOC = N1;
+
+NET "miso_aux2" LOC = L14;
+NET "miso_aux1" LOC = N14;
+NET "mosi_aux1" LOC = M12;
+NET "mosi_aux2" LOC = K14;
+NET "AUX[5]" LOC = C6;
+NET "AUX[4]" LOC = B6;
+NET "AUX[3]" LOC = C5;
+NET "AUX[2]" LOC = B5;
+NET "AUX[1]" LOC = C4;
+NET "AUX[0]" LOC = B4;
+NET "A[7]" LOC = J13;
+NET "A[6]" LOC = J14;
+NET "A[5]" LOC = H13;
+NET "A[4]" LOC = H12;
+NET "A[3]" LOC = G14;
+NET "A[2]" LOC = G13;
+NET "A[1]" LOC = F14;
+NET "A[0]" LOC = F13;
+NET "B[15]" LOC = M1;
+NET "B[14]" LOC = L3;
+NET "B[12]" LOC = L1;
+NET "B[13]" LOC = L2;
+NET "B[11]" LOC = K3;
+NET "B[10]" LOC = J3;
+NET "B[9]" LOC = H3;
+NET "B[8]" LOC = H2;
+NET "B[7]" LOC = H1;
+NET "B[6]" LOC = G3;
+NET "B[5]" LOC = G1;
+NET "B[4]" LOC = F1;
+NET "B[3]" LOC = F2;
+NET "B[2]" LOC = F3;
+NET "B[1]" LOC = D1;
+NET "B[0]" LOC = D2;
+
+
+NET "L01_clk_p" IOSTANDARD = LVDS_25;
+NET "L02_clk_p" IOSTANDARD = LVDS_25;
+NET "L09_clk_p" IOSTANDARD = LVDS_25;
+NET "L10_clk_p" IOSTANDARD = LVDS_25;
+
+
+NET "L02_clk_p" LOC = C3;
+NET "L09_clk_p" LOC = D13;
+NET "L10_clk_p" LOC = C14;
+NET "L01_clk_p" LOC = B2;

@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.20131013
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.20131013
+DATE            11/18/2021 - 21:08
+SOURCE          C:\Xilinx\projects\MBO-5\Spartan_proj\MBO_spiflash.mcs
+DEVICE          1024K
+DATA_WIDTH      1
+FILL_DATA       0xFF
+SIGNATURE       0x0BA15DF3
+START_ADDRESS   0x00000000 END_ADDRESS 0x0004547F DIRECTION_UP   "C:/Xilinx/projects/MBO-5/Spartan_proj/mbo_testpin.bit" 3s500ecp132

@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Bus Id="AUX">
+			<Port Id="5" Dir="OUT"/>
+			<Port Id="4" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Bus Id="A">
+			<Port Id="7" Dir="OUT"/>
+			<Port Id="6" Dir="OUT"/>
+			<Port Id="5" Dir="OUT"/>
+			<Port Id="4" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Bus Id="B">
+			<Port Id="15" Dir="OUT"/>
+			<Port Id="14" Dir="OUT"/>
+			<Port Id="13" Dir="OUT"/>
+			<Port Id="12" Dir="OUT"/>
+			<Port Id="11" Dir="OUT"/>
+			<Port Id="10" Dir="OUT"/>
+			<Port Id="9" Dir="OUT"/>
+			<Port Id="8" Dir="OUT"/>
+			<Port Id="7" Dir="OUT"/>
+			<Port Id="6" Dir="OUT"/>
+			<Port Id="5" Dir="OUT"/>
+			<Port Id="4" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Port Id="clk" Dir="IN"/>
+		<Port Id="rst" Dir="IN"/>
+		<Port Id="clk_alt" Dir="IN"/>
+		<Port Id="RxD_Z" Dir="IN"/>
+		<Port Id="DE_Z" Dir="OUT"/>
+		<Port Id="TxD_Z" Dir="OUT"/>
+		<Port Id="RxD_Y" Dir="IN"/>
+		<Port Id="DE_Y" Dir="OUT"/>
+		<Port Id="TxD_Y" Dir="OUT"/>
+		<Port Id="RxD_X" Dir="IN"/>
+		<Port Id="DE_X" Dir="OUT"/>
+		<Port Id="TxD_X" Dir="OUT"/>
+		<Port Id="test" Dir="IN"/>
+		<Port Id="FL" Dir="IN"/>
+		<Port Id="miso_aux1" Dir="OUT"/>
+		<Port Id="CS_aux1" Dir="OUT"/>
+		<Port Id="SCK_aux1" Dir="OUT"/>
+		<Port Id="mosi_aux1" Dir="OUT"/>
+		<Port Id="miso_aux2" Dir="OUT"/>
+		<Port Id="CS_aux2" Dir="OUT"/>
+		<Port Id="SCK_aux2" Dir="OUT"/>
+		<Port Id="mosi_aux2" Dir="OUT"/>
+		<Port Id="L09_clk_p" Dir="OUT"/>
+		<Port Id="L09_clk_n" Dir="OUT"/>
+		<Port Id="L10_clk_p" Dir="OUT"/>
+		<Port Id="L10_clk_n" Dir="OUT"/>
+		<Port Id="L01_clk_p" Dir="OUT"/>
+		<Port Id="L01_clk_n" Dir="OUT"/>
+		<Port Id="L02_clk_p" Dir="OUT"/>
+		<Port Id="L02_clk_n" Dir="OUT"/>
+		<DiffPair Pos="L09_clk_p" Neg="L09_clk_n"/>
+		<DiffPair Pos="L10_clk_p" Neg="L10_clk_n"/>
+		<DiffPair Pos="L01_clk_p" Neg="L01_clk_n"/>
+		<DiffPair Pos="L02_clk_p" Neg="L02_clk_n"/>
+	</Ifc>
+</Interface>
+

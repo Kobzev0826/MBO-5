@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Xilinx\projects\MBO-5\Spartan_proj\MBO_testpin.ncd
+OUTFILE=C:\Xilinx\projects\MBO-5\Spartan_proj\MBO_testpin.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5cp132
+WORKINGDIR=C:\Xilinx\projects\MBO-5\Spartan_proj
+LICENSE=WebPack
+USER_INFO=__0_0_0

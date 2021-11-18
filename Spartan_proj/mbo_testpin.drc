@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Wed Nov 17 23:49:59 2021
+
+drc -z MBO_testpin.ncd MBO_testpin.pcf
+
+DRC detected 0 errors and 0 warnings.

@@ -1,0 +1,396 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: mbo_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mbo_top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mbo_top"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-cp132
+
+---- Source Options
+Top Module Name                    : mbo_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "verilog/mbo_top.v" in library work
+Module <mbo_top> compiled
+No errors in compilation
+Analysis of file <"mbo_top.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <mbo_top> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <mbo_top>.
+Module <mbo_top> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <mbo_top>.
+    Related source file is "verilog/mbo_top.v".
+WARNING:Xst:647 - Input <opros> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <reg_data2<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 24-bit register for signal <fake_out>.
+    Found 1-bit register for signal <out>.
+    Found 8-bit up counter for signal <cnt_data1>.
+    Found 8-bit up counter for signal <cnt_data2>.
+    Found 24-bit adder for signal <fake_out$add0000> created at line 74.
+    Found 8-bit register for signal <reg_data1>.
+    Found 1-bit register for signal <reg_data2<7>>.
+    Found 64-bit register for signal <reg_out>.
+    Found 1-bit register for signal <strob_data1>.
+    Found 1-bit register for signal <strob_data2>.
+    Found 24-bit register for signal <w2_reg1>.
+    Found 24-bit register for signal <w2_reg2>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred 148 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <mbo_top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 24-bit adder                                          : 1
+# Counters                                             : 2
+ 8-bit up counter                                      : 2
+# Registers                                            : 125
+ 1-bit register                                        : 124
+ 24-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 24-bit adder                                          : 1
+# Counters                                             : 2
+ 8-bit up counter                                      : 2
+# Registers                                            : 148
+ Flip-Flops                                            : 148
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <mbo_top> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block mbo_top, actual ratio is 2.
+
+Final Macro Processing ...
+
+Processing Unit <mbo_top> :
+	Found 65-bit shift register for signal <out_OBUF>.
+Unit <mbo_top> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 99
+ Flip-Flops                                            : 99
+# Shift Registers                                      : 1
+ 65-bit shift register                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : mbo_top.ngr
+Top Level Output File Name         : mbo_top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 29
+
+Cell Usage :
+# BELS                             : 139
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 14
+#      LUT2                        : 24
+#      LUT2_D                      : 2
+#      LUT3                        : 6
+#      LUT4                        : 6
+#      LUT4_D                      : 2
+#      LUT4_L                      : 2
+#      MUXCY                       : 37
+#      VCC                         : 1
+#      XORCY                       : 40
+# FlipFlops/Latches                : 100
+#      FD                          : 34
+#      FDE                         : 48
+#      FDRE                        : 18
+# Shift Registers                  : 4
+#      SRL16                       : 1
+#      SRLC16                      : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 27
+#      IBUF                        : 2
+#      OBUF                        : 25
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500ecp132-5 
+
+ Number of Slices:                       62  out of   4656     1%  
+ Number of Slice Flip Flops:            100  out of   9312     1%  
+ Number of 4 input LUTs:                 64  out of   9312     0%  
+    Number used as logic:                60
+    Number used as Shift registers:       4
+ Number of IOs:                          29
+ Number of bonded IOBs:                  28  out of     92    30%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 104   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 4.874ns (Maximum Frequency: 205.153MHz)
+   Minimum input arrival time before clock: 1.731ns
+   Maximum output required time after clock: 4.063ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.874ns (frequency: 205.153MHz)
+  Total number of paths / destination ports: 1554 / 184
+-------------------------------------------------------------------------
+Delay:               4.874ns (Levels of Logic = 3)
+  Source:            cnt_data1_4 (FF)
+  Destination:       w2_reg1_15 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: cnt_data1_4 to w2_reg1_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             4   0.514   0.651  cnt_data1_4 (cnt_data1_4)
+     LUT3:I0->O            1   0.612   0.360  w2_reg1_15_cmp_eq00001_SW0 (N6)
+     LUT4_D:I3->O          1   0.612   0.387  w2_reg1_15_cmp_eq00001 (N01)
+     LUT3:I2->O            8   0.612   0.643  w2_reg1_15_cmp_eq00002 (w2_reg1_15_cmp_eq0000)
+     FDE:CE                    0.483          w2_reg1_15
+    ----------------------------------------
+    Total                      4.874ns (2.833ns logic, 2.041ns route)
+                                       (58.1% logic, 41.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              1.731ns (Levels of Logic = 1)
+  Source:            in_bo5_1 (PAD)
+  Destination:       reg_data1_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: in_bo5_1 to reg_data1_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.106   0.357  in_bo5_1_IBUF (in_bo5_1_IBUF)
+     FD:D                      0.268          reg_data1_7
+    ----------------------------------------
+    Total                      1.731ns (1.374ns logic, 0.357ns route)
+                                       (79.4% logic, 20.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 25 / 25
+-------------------------------------------------------------------------
+Offset:              4.063ns (Levels of Logic = 1)
+  Source:            fake_out_23 (FF)
+  Destination:       fake_out<23> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: fake_out_23 to fake_out<23>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.514   0.380  fake_out_23 (fake_out_23)
+     OBUF:I->O                 3.169          fake_out_23_OBUF (fake_out<23>)
+    ----------------------------------------
+    Total                      4.063ns (3.683ns logic, 0.380ns route)
+                                       (90.6% logic, 9.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.88 secs
+ 
+--> 
+
+Total memory usage is 4513548 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

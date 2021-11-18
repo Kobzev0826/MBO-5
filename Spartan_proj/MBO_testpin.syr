@@ -1,0 +1,508 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Reading design: MBO_testpin.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MBO_testpin.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MBO_testpin"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-cp132
+
+---- Source Options
+Top Module Name                    : MBO_testpin
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "MBO_testpin.v" in library work
+Module <MBO_testpin> compiled
+No errors in compilation
+Analysis of file <"MBO_testpin.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <MBO_testpin> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <MBO_testpin>.
+Module <MBO_testpin> is correct for synthesis.
+ 
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <IBUFDS_L09> in unit <MBO_testpin>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <IBUFDS_L09> in unit <MBO_testpin>.
+    Set user-defined property "SLEW =  SLOW" for instance <IBUFDS_L09> in unit <MBO_testpin>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <IBUFDS_L10> in unit <MBO_testpin>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <IBUFDS_L10> in unit <MBO_testpin>.
+    Set user-defined property "SLEW =  SLOW" for instance <IBUFDS_L10> in unit <MBO_testpin>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <IBUFDS_L01> in unit <MBO_testpin>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <IBUFDS_L01> in unit <MBO_testpin>.
+    Set user-defined property "SLEW =  SLOW" for instance <IBUFDS_L01> in unit <MBO_testpin>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <IBUFDS_L02> in unit <MBO_testpin>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <IBUFDS_L02> in unit <MBO_testpin>.
+    Set user-defined property "SLEW =  SLOW" for instance <IBUFDS_L02> in unit <MBO_testpin>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <X_send> in unit <MBO_testpin> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <Y_send> in unit <MBO_testpin> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <Z_send> in unit <MBO_testpin> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg_DE_X> in unit <MBO_testpin> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg_DE_Y> in unit <MBO_testpin> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <reg_DE_Z> in unit <MBO_testpin> has a constant value of 1 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <MBO_testpin>.
+    Related source file is "MBO_testpin.v".
+    Found 8-bit register for signal <A>.
+    Found 6-bit register for signal <AUX>.
+    Found 16-bit register for signal <B>.
+    Found 1-bit register for signal <CS_aux1>.
+    Found 1-bit register for signal <CS_aux2>.
+    Found 1-bit register for signal <SCK_aux1>.
+    Found 1-bit register for signal <SCK_aux2>.
+    Found 1-bit register for signal <miso_aux1>.
+    Found 1-bit register for signal <miso_aux2>.
+    Found 1-bit register for signal <mosi_aux1>.
+    Found 1-bit register for signal <mosi_aux2>.
+    Found 16-bit up counter for signal <counter>.
+    Found 2-bit up counter for signal <counter_clk>.
+    Found 1-bit register for signal <reg_TxD_X>.
+    Found 1-bit register for signal <reg_TxD_Y>.
+    Found 1-bit register for signal <reg_TxD_Z>.
+    Found 8-bit register for signal <X>.
+    Found 8-bit register for signal <Y>.
+    Found 8-bit register for signal <Z>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred  65 D-type flip-flop(s).
+Unit <MBO_testpin> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 53
+ 1-bit register                                        : 51
+ 6-bit register                                        : 1
+ 8-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 65
+ Flip-Flops                                            : 65
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <B_11> in Unit <MBO_testpin> is equivalent to the following FF/Latch, which will be removed : <AUX_3> 
+INFO:Xst:2261 - The FF/Latch <B_12> in Unit <MBO_testpin> is equivalent to the following FF/Latch, which will be removed : <AUX_4> 
+INFO:Xst:2261 - The FF/Latch <AUX_5> in Unit <MBO_testpin> is equivalent to the following FF/Latch, which will be removed : <B_13> 
+INFO:Xst:2261 - The FF/Latch <X_1> in Unit <MBO_testpin> is equivalent to the following FF/Latch, which will be removed : <A_0> 
+INFO:Xst:2261 - The FF/Latch <X_2> in Unit <MBO_testpin> is equivalent to the following FF/Latch, which will be removed : <A_1> 
+INFO:Xst:2261 - The FF/Latch <X_3> in Unit <MBO_testpin> is equivalent to the following FF/Latch, which will be removed : <A_2> 
+INFO:Xst:2261 - The FF/Latch <X_4> in Unit <MBO_testpin> is equivalent to the following FF/Latch, which will be removed : <A_3> 
+INFO:Xst:2261 - The FF/Latch <X_5> in Unit <MBO_testpin> is equivalent to the following FF/Latch, which will be removed : <A_4> 
+INFO:Xst:2261 - The FF/Latch <X_6> in Unit <MBO_testpin> is equivalent to the following FF/Latch, which will be removed : <A_5> 
+INFO:Xst:2261 - The FF/Latch <X_7> in Unit <MBO_testpin> is equivalent to the following FF/Latch, which will be removed : <A_6> 
+INFO:Xst:2261 - The FF/Latch <B_8> in Unit <MBO_testpin> is equivalent to the following FF/Latch, which will be removed : <AUX_0> 
+INFO:Xst:2261 - The FF/Latch <reg_TxD_X> in Unit <MBO_testpin> is equivalent to the following FF/Latch, which will be removed : <A_7> 
+INFO:Xst:2261 - The FF/Latch <B_9> in Unit <MBO_testpin> is equivalent to the following FF/Latch, which will be removed : <AUX_1> 
+INFO:Xst:2261 - The FF/Latch <B_10> in Unit <MBO_testpin> is equivalent to the following FF/Latch, which will be removed : <AUX_2> 
+WARNING:Xst:2677 - Node <counter_8> of sequential type is unconnected in block <MBO_testpin>.
+WARNING:Xst:2677 - Node <counter_9> of sequential type is unconnected in block <MBO_testpin>.
+WARNING:Xst:2677 - Node <counter_10> of sequential type is unconnected in block <MBO_testpin>.
+WARNING:Xst:2677 - Node <counter_11> of sequential type is unconnected in block <MBO_testpin>.
+WARNING:Xst:2677 - Node <counter_12> of sequential type is unconnected in block <MBO_testpin>.
+WARNING:Xst:2677 - Node <counter_13> of sequential type is unconnected in block <MBO_testpin>.
+WARNING:Xst:2677 - Node <counter_14> of sequential type is unconnected in block <MBO_testpin>.
+WARNING:Xst:2677 - Node <counter_15> of sequential type is unconnected in block <MBO_testpin>.
+WARNING:Xst:2677 - Node <counter_clk_1> of sequential type is unconnected in block <MBO_testpin>.
+
+Optimizing unit <MBO_testpin> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MBO_testpin, actual ratio is 0.
+FlipFlop AUX_5 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop B_12 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop B_11 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop B_10 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop B_9 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop B_8 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+Processing Unit <MBO_testpin> :
+	Found 2-bit shift register for signal <X_1>.
+Unit <MBO_testpin> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 64
+ Flip-Flops                                            : 64
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : MBO_testpin.ngr
+Top Level Output File Name         : MBO_testpin
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 60
+
+Cell Usage :
+# BELS                             : 28
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 7
+#      LUT2                        : 2
+#      MUXCY                       : 7
+#      VCC                         : 1
+#      XORCY                       : 8
+# FlipFlops/Latches                : 65
+#      FDE                         : 64
+#      FDR                         : 1
+# Shift Registers                  : 1
+#      SRL16E                      : 1
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 54
+#      IBUF                        : 6
+#      OBUF                        : 44
+#      OBUFDS                      : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500ecp132-5 
+
+ Number of Slices:                       24  out of   4656     0%  
+ Number of Slice Flip Flops:             43  out of   9312     0%  
+ Number of 4 input LUTs:                 12  out of   9312     0%  
+    Number used as logic:                11
+    Number used as Shift registers:       1
+ Number of IOs:                          60
+ Number of bonded IOBs:                  60  out of     92    65%  
+    IOB Flip Flops:                      22
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 28    |
+clk_alt                            | BUFGP                  | 38    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 3.492ns (Maximum Frequency: 286.369MHz)
+   Minimum input arrival time before clock: 3.722ns
+   Maximum output required time after clock: 4.221ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.492ns (frequency: 286.369MHz)
+  Total number of paths / destination ports: 25 / 25
+-------------------------------------------------------------------------
+Delay:               3.492ns (Levels of Logic = 0)
+  Source:            Mshreg_X_1 (FF)
+  Destination:       X_1 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Mshreg_X_1 to X_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SRL16E:CLK->Q         1   3.224   0.000  Mshreg_X_1 (Mshreg_X_1)
+     FDE:D                     0.268          X_1
+    ----------------------------------------
+    Total                      3.492ns (3.492ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_alt'
+  Clock period: 3.286ns (frequency: 304.280MHz)
+  Total number of paths / destination ports: 44 / 16
+-------------------------------------------------------------------------
+Delay:               3.286ns (Levels of Logic = 8)
+  Source:            counter_1 (FF)
+  Destination:       counter_7 (FF)
+  Source Clock:      clk_alt rising
+  Destination Clock: clk_alt rising
+
+  Data Path: counter_1 to counter_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.514   0.532  counter_1 (counter_1)
+     LUT1:I0->O            1   0.612   0.000  Mcount_counter_cy<1>_rt (Mcount_counter_cy<1>_rt)
+     MUXCY:S->O            1   0.404   0.000  Mcount_counter_cy<1> (Mcount_counter_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_counter_cy<2> (Mcount_counter_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_counter_cy<3> (Mcount_counter_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_counter_cy<4> (Mcount_counter_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  Mcount_counter_cy<5> (Mcount_counter_cy<5>)
+     MUXCY:CI->O           0   0.051   0.000  Mcount_counter_cy<6> (Mcount_counter_cy<6>)
+     XORCY:CI->O           1   0.699   0.000  Mcount_counter_xor<7> (Result<7>)
+     FDE:D                     0.268          counter_7
+    ----------------------------------------
+    Total                      3.286ns (2.755ns logic, 0.532ns route)
+                                       (83.8% logic, 16.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 30 / 30
+-------------------------------------------------------------------------
+Offset:              3.630ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       Y_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to Y_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.106   0.357  rst_IBUF (rst_IBUF)
+     INV:I->O             27   0.612   1.072  rst_inv281_INV_0 (rst_inv)
+     FDE:CE                    0.483          X_3
+    ----------------------------------------
+    Total                      3.630ns (2.201ns logic, 1.429ns route)
+                                       (60.6% logic, 39.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_alt'
+  Total number of paths / destination ports: 76 / 38
+-------------------------------------------------------------------------
+Offset:              3.722ns (Levels of Logic = 2)
+  Source:            FL (PAD)
+  Destination:       B_0 (FF)
+  Destination Clock: clk_alt rising
+
+  Data Path: FL to B_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.106   0.532  FL_IBUF (FL_IBUF)
+     LUT2:I0->O           22   0.612   0.989  AUX_or00001 (AUX_or0000)
+     FDE:CE                    0.483          B_0
+    ----------------------------------------
+    Total                      3.722ns (2.201ns logic, 1.521ns route)
+                                       (59.1% logic, 40.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_alt'
+  Total number of paths / destination ports: 30 / 30
+-------------------------------------------------------------------------
+Offset:              4.040ns (Levels of Logic = 1)
+  Source:            miso_aux1 (FF)
+  Destination:       miso_aux1 (PAD)
+  Source Clock:      clk_alt rising
+
+  Data Path: miso_aux1 to miso_aux1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.514   0.357  miso_aux1 (miso_aux1_OBUF)
+     OBUF:I->O                 3.169          miso_aux1_OBUF (miso_aux1)
+    ----------------------------------------
+    Total                      4.040ns (3.683ns logic, 0.357ns route)
+                                       (91.2% logic, 8.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 19 / 19
+-------------------------------------------------------------------------
+Offset:              4.221ns (Levels of Logic = 1)
+  Source:            counter_clk_0 (FF)
+  Destination:       L10_clk_n (PAD)
+  Source Clock:      clk rising
+
+  Data Path: counter_clk_0 to L10_clk_n
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.514   0.538  counter_clk_0 (counter_clk_0)
+     OBUFDS:I->O               3.169          IBUFDS_L09 (L09_clk_p)
+    ----------------------------------------
+    Total                      4.221ns (3.683ns logic, 0.538ns route)
+                                       (87.3% logic, 12.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.04 secs
+ 
+--> 
+
+Total memory usage is 4514132 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :   20 (   0 filtered)
+

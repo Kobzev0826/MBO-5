@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o C:\Xilinx\projects\MBO-5\Spartan_proj//MBO_spiflash -s 1024 -u 0000 C:/Xilinx/projects/MBO-5/Spartan_proj/mbo_testpin.bit -spi 
+
+PROM C:\Xilinx\projects\MBO-5\Spartan_proj\MBO_spiflash.prm map: Thu Nov 18 21:08:39 2021
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          1024K
+PROM start    0000:0000
+PROM end      000f:ffff
+PROM checksum 0ba15df3
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0004:547f     Nov 17 23:50:01 2021 C:/Xilinx/projects/MBO-5/Spartan_proj/mbo_testpin.bit
